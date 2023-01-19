@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<Pane 
+   xmlns="http://javafx.com/javafx/18" 
+   xmlns:fx="http://javafx.com/fxml/1" 
+   fx:controller="simpleresvadmin.ReservationController"
+>
+   <children>
+      <VBox>
+         <children>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="400.0" prefWidth="245.0">
+                     <children>
+                        <Pane prefHeight="29.0" prefWidth="245.0">
+                           <children>
+                              <Label layoutX="80.0" layoutY="2.0" text="Reservations" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="39.0" prefWidth="245.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Filter by:" />
+                              <ChoiceBox fx:id="Filter" layoutX="81.0" layoutY="10.0" prefWidth="150.0" />
+                           </children>
+                        </Pane>
+                        <ScrollPane prefHeight="309.0" prefWidth="245.0">
+                           <content>
+                              <ListView fx:id="reservationsList" prefHeight="355.0" prefWidth="227.0" />
+                           </content>
+                        </ScrollPane>
+                        <HBox prefHeight="36.0" prefWidth="245.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#lend" prefHeight="48.0" prefWidth="124.0" text="Lend" />
+                              <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#returnReservation" prefHeight="36.0" prefWidth="127.0" text="Return" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="400.0" prefWidth="53.0" />
+                  <Pane prefHeight="400.0" prefWidth="304.0">
+                     <children>
+                        <Label layoutY="32.0" text="Holder" />
+                        <Label layoutX="1.0" layoutY="86.0" text="Item" />
+                        <Label layoutX="-7.0" layoutY="324.0" text="Status" />
+                        <Text fx:id="status" layoutX="14.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                        <Button layoutX="236.0" layoutY="357.0" mnemonicParsing="false" onAction="#refreshReservations" text="Refresh" />
+                        <TextField fx:id="holder" editable="false" layoutX="7.0" layoutY="54.0" text="Text" />
+                        <TextField fx:id="item" editable="false" layoutX="7.0" layoutY="108.0" text="Text" />
+                        <Label layoutX="4.0" layoutY="147.0" text="Start time" />
+                        <TextField fx:id="startTime" editable="false" layoutX="10.0" layoutY="169.0" prefHeight="25.0" prefWidth="179.0" text="Text" />
+                        <Label layoutX="7.0" layoutY="210.0" text="End time" />
+                        <TextField fx:id="endTime" editable="false" layoutX="13.0" layoutY="232.0" prefHeight="25.0" prefWidth="179.0" text="Text" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

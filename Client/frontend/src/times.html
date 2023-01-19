@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="/wails/ipc.js"></script>
+    <script src="/wails/runtime.js"></script>
+    <title>SimpleResv | Time selection</title>
+    <div id="styles"></div>
+  </head>
+  <body>
+    <!--A floating button-->
+    <button id="show-fav" onclick="showMenu()">^</button>
+    <!--A floating hover dropdown menu of favorite times-->
+    <div class="fav-menu container" id="fav-menu">
+      <div id="favorite-times" class="favorite-times">
+        <div class="favorite-times-header container">
+          <h3>Favorite times</h3>
+          <div class="favorite-times-list" id="favorite-times-list">
+            <!--Javascript will loop through and add list items-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Two calandars which allow the user to select year, month, date, and time -->
+    <div class="title">
+      <h1>SimpleResv</h1>
+    </div>
+    <div class="app">
+      <h2>Time selection</h2>
+      <div id="time-selector" class="container">
+        <div class="container">
+          <!--Start date time-->
+          <h3>Start time</h3>
+          <div id="start-datetime"></div>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <hr />
+
+        <br />
+        <div class="container">
+          <!--End date time-->
+          <h3>End time</h3>
+          <div id="end-datetime"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="submit-bar">
+      <button id="submit-btn" onclick="nextWindow()">Next</button>
+    </div>
+    <script src="./js/times.js" type="module"></script>
+  </body>
+</html>

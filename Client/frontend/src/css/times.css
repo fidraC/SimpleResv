@@ -1,0 +1,99 @@
+/* Make background color of select darker */
+.form-control {
+  background-color: rgb(24, 20, 40);
+  border-color: black;
+  color: white;
+}
+
+.submit-bar {
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+}
+#submit-btn {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 40px;
+}
+
+/* Floating vertical menu on the top right hidden by default */
+.fav-menu {
+  position: fixed;
+  top: 3%;
+  right: 1%;
+  width: 30%;
+  height: 50%;
+  background-color: #1e3538;
+  z-index: 1;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  transition: 0.5s;
+  /* rounded corner */
+  border-radius: 10px 0 0 10px;
+}
+
+#fav-menu {
+  display: none;
+}
+
+/* A round button that floats at the top right corner */
+#show-fav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #1e3538;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-size: 16px;
+  z-index: 1;
+  transition: 0.5s;
+  display: flex;
+}
+
+/* A menu item with slight outline, fills whole horizontal space available */
+.favorite-time-list-banner {
+  background-color: #1e3538;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid white;
+  width: 100%;
+}
+
+.favorite-times {
+  padding: 5%;
+}
+
+.favorite-time-list-btn {
+  width: 100%;
+}
+
+
+/* A floating button that floats at the top right corner */
+#delete-fav {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  border: none;
+  font-size: 100%;
+  z-index: 1;
+  transition: 0.5s;
+  display: flex;
+  /* Small size */
+}

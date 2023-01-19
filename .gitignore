@@ -1,0 +1,9 @@
+# Ignore optimized distribution files by Vite.js
+dist/
+
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build

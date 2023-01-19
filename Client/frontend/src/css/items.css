@@ -1,0 +1,92 @@
+/* Device list is a grid with three columns of equal size */
+#item-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/* A card resides in item-list grid and has a slightly lighter background-color than body */
+.item-list-item{
+    border-color: black;
+    border-style: solid;
+    border-width: 0.1rem;
+    background-color: rgba(30, 42, 60, 0.9);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.submit-bar{
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+}
+#submit-btn{
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 40px;
+}
+#fav-menu {
+    display: none;
+  }
+  
+  /* A round button that floats at the top right corner */
+  #show-fav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #1e3538;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 16px;
+    z-index: 1;
+    transition: 0.5s;
+    display: flex;
+  }
+  
+  /* A menu item with slight outline, fills whole horizontal space available */
+  .favorite-items-list-banner {
+    background-color: #1e3538;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 100%;
+  }
+  
+  .favorite-items {
+    padding: 5%;
+  }
+  
+  .favorite-item-list-btn {
+    width: 100%;
+  }
+  
+  
+  /* A floating button that floats at the top right corner */
+  #delete-fav {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    border: none;
+    font-size: 100%;
+    z-index: 1;
+    transition: 0.5s;
+    display: flex;
+    /* Small size */
+  }
